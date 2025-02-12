@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchRepositories } from "../../redux/actions";
 import Header from "../Header";
-import './index.css'
+import "./index.css";
 
 function HomeScreen() {
   const [query, setQuery] = useState("");
@@ -24,11 +24,13 @@ function HomeScreen() {
 
   return (
     <div className="home-container">
+      <Header />
       <input
         type="text"
         placeholder="Search repositories..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        className="home-serach"
       />
       <ul className="repo_ul">
         {repositories.map((repo) => (
