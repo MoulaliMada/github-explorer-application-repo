@@ -31,7 +31,7 @@ const DetailsScreen = () => {
         <div className="Header-details-screen">
           <Header />
         </div>
-        <h2 className="repo-not-found">Repository not found</h2>;
+        <h2 className="repo-not-found">Welcome to Github Explorer</h2>;
       </div>
     );
   }
