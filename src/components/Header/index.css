@@ -1,24 +1,86 @@
 .header-container {
   display: flex;
   align-items: center;
-  width: 65%;
-  justify-content: space-between;
+  border: 10px;
+  border-style: solid;
+  width: 100%;
+  border-width: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 7px;
+  position: fixed;
+  top: 20px;
+  background-color: white;
+}
+.dark-mode .header-container {
+  background-color: black;
+  border-color: white;
 }
 .header-links {
   color: black;
+}
+.dark-mode .header-links {
+  color: white;
 }
 .header-home {
   display: none;
 }
 .header-logo {
-  font-size: 30px;
+  font-size: 20px;
+  margin-left: 10px;
 }
-.header-logo-favorite{
-    font-size: 30px;
-    color: rgb(227, 19, 19);
+.header-logo-favorite {
+  font-size: 20px;
+  color: rgb(227, 19, 19);
+  margin-left: 10px;
 }
-@media (min-width: 768px) {
+.light-dark-mode-btn {
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+  border-radius: 7px;
+}
+.dark-mode .light-dark-mode-btn {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+@media (min-width: 766px) {
   .header-logo {
     display: none;
+  }
+  .header-home {
+    display: flex;
+    margin: 0px;
+  }
+  .header-logo-favorite {
+    display: none;
+  }
+  .git-logo {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  .header-logo-favorite2 {
+    font-size: 20px;
+    color: rgb(227, 19, 19);
+    margin-right: 5px;
+  }
+  .light-dark-mode-btn {
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    border-radius: 7px;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    position: sticky;
+  }
+  .header-links {
+    margin-left: 5px;
+    margin-right: 7px;
   }
 }

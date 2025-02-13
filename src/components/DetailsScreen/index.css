@@ -1,0 +1,88 @@
+.details-container {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.dark-mode .details-container{
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.avatar-description-container{
+margin-top: 100px;
+border-color: rgb(134, 132, 132);
+border-style: solid;
+padding: 10px;
+border-radius: 10px;
+}
+.Header-details-screen {
+  display: flex;
+}
+.details-avatar {
+  width: 100px;
+  border-radius: 5px;
+}
+.repo-name-container2 {
+}
+.repo-name-container {
+  display: none;
+}
+.repo-not-found{
+  margin: 50px;
+}
+@media (min-width: 768px) {
+  .repo-name-container2 {
+    display: none;
+  }
+  .Header-details-screen {
+    display: none;
+  }
+  .details-avatar {
+    width: 75px;
+  }
+  .details-container {
+    margin: 30px;
+    padding: 30px;
+    background-color: rgb(237, 229, 229);
+    border-radius: 15px;
+    border-color: rgb(164, 160, 160);
+    border-style: solid;
+    width: 100%;
+    min-height: 50vh;
+    max-height: 100%;
+  }
+  .dark-mode .details-container {
+    background-color: rgb(26, 26, 26);
+    min-height: 50vh;
+    max-height: 100%;
+  }
+  .avatar-description-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+  .avatar-container {
+    width: 35%;
+    border-color: rgb(169, 165, 165);
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .repo-details-name {
+    margin: 0;
+    font-size: 19px;
+  }
+  .repo-description {
+    font-size: 13px;
+  }
+  .repo-name-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+}

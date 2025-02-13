@@ -14,9 +14,11 @@ export default function App() {
       <ThemeProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<HomeScreen />} />
-            <Route path="/details/:id" element={<DetailsScreen />} />
-            <Route path="/favorites" element={<FavoritesScreen />} />
+            
+              <Route path="/" element={<HomeScreen />} />
+              <Route path="/home/:id" element={<HomeScreen />} />
+              <Route path="/details/:id" element={<DetailsScreen />} />
+              <Route path="/favorites" element={<FavoritesScreen />} />
           </Routes>
         </Router>
       </ThemeProvider>
