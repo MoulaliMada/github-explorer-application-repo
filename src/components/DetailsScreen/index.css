@@ -2,19 +2,19 @@
   padding: 20px;
   box-sizing: border-box;
 }
-.dark-mode .details-container{
+.dark-mode .details-container {
   background-color: black;
   color: white;
   min-height: 100vh;
   max-height: 100%;
 }
 
-.avatar-description-container{
-margin-top: 100px;
-border-color: rgb(134, 132, 132);
-border-style: solid;
-padding: 10px;
-border-radius: 10px;
+.avatar-description-container {
+  margin-top: 60px;
+  border-color: rgb(134, 132, 132);
+  border-style: solid;
+  padding: 10px;
+  border-radius: 10px;
 }
 .Header-details-screen {
   display: flex;
@@ -28,7 +28,7 @@ border-radius: 10px;
 .repo-name-container {
   display: none;
 }
-.repo-not-found{
+.repo-not-found {
   margin: 50px;
 }
 @media (min-width: 768px) {
@@ -81,8 +81,19 @@ border-radius: 10px;
     font-size: 13px;
   }
   .repo-name-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .repo-name-btn-container {
     width: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+  }
+  .favorite-btn{
+    margin: 0;
   }
 }

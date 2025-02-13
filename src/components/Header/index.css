@@ -11,6 +11,7 @@
   position: fixed;
   top: 20px;
   background-color: white;
+  position: relative;
 }
 .dark-mode .header-container {
   background-color: black;

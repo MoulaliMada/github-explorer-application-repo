@@ -16,15 +16,6 @@ function HomeScreen() {
     id = 1;
   }
 
-  //  if (repositories !== undefined) {
-  //    if (repositories.length > 0) {
-  //      if (id === undefined) {
-  //        const navigateId = repositories[0].id;
-  //        navigate(`/home/${navigateId}`);
-  //      }
-  //    }
-  //  }
-
   useEffect(() => {
     if (query === "") {
       dispatch(fetchRepositories("%7Bquery%7D"));

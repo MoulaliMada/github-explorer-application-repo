@@ -1,0 +1,85 @@
+.favorites-container {
+  padding: 20px;
+}
+.dark-mode .favorites-container {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+.heading-favorites {
+  font-size: 20px;
+  margin-top: 27px;
+}
+.favorite-ul {
+  list-style-type: none;
+  padding: 0;
+  overflow-y: auto;
+  height: 80vh;
+}
+.favorite-li {
+  border-color: rgb(162, 160, 160);
+  border-style: solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgb(235, 232, 232);
+}
+.dark-mode .favorite-li {
+  background-color: rgb(20, 20, 20);
+}
+.remove-favorite-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ce0be4, #b05bd5);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(150, 1, 242, 0.4);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+.remove-favorite-btn:hover {
+  background: linear-gradient(135deg, #9c9cf0, #1a1ad7);
+  box-shadow: 0 6px 15px rgba(255, 117, 140, 0.5);
+  transform: translateY(-3px);
+}
+
+.remove-favorite-btn:active {
+  transform: translateY(10px);
+  box-shadow: 0 2px 5px rgba(215, 72, 95, 0.3);
+}
+.favorite-repo-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.repo-description {
+  margin-top: 10px;
+}
+@media (min-width:768px) {
+  .view-more-btn {
+    display: none;
+  }
+  .favorite-li {
+   width: 50%;
+  }
+  .heading-favorites {
+    font-size: 20px;
+    margin-top: 10px;
+    
+  }
+  .favorite-ul {
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto;
+    height: 68vh;
+  }
+  .remove-favorite-btn{
+    margin: 0;
+  }
+}
